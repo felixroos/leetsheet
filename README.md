@@ -18,7 +18,25 @@ This package contains the Sheet module which can be used to handle musical leads
 
 ## Demo
 
-You can run the demo via `npm run demo`
+- [Stackblitz Demo](https://leetsheet-demo.stackblitz.io)
+- Manual run via `npm run demo`
+
+## Get Started
+
+### Install
+```sh
+npm install leetsheet --save
+```
+
+### Import
+
+```js
+import leetsheet from 'leetsheet';
+const { Snippet, Sheet } = leetsheet;
+// instructions
+```
+
+# API
 
 ## Snippets
 
