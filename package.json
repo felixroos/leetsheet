@@ -1,0 +1,43 @@
+{
+  "name": "leetsheet",
+  "version": "0.1.0",
+  "description": "musical leadsheet notation format for javascript",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixroos/leetsheet.git"
+  },
+  "author": "Felix Roos <flix91@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felixroos/leetsheet/issues"
+  },
+  "homepage": "https://github.com/felixroos/leetsheet#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.0.0",
+    "babel-jest": "^24.1.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "collectCoverage": false,
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
