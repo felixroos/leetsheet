@@ -1,6 +1,6 @@
 # leadsheet
 
-This package contains the Sheet module which can be used to handle musical leadsheets (and other control flows) in json and text format.
+This lib can handle musical leadsheets in json and text format.
 
 - Snippet: text format, usable for quick and easy input and storage of sheets
 - Sheet/Measure: JSON Format, usable for parsing / rendering / playing sheets
@@ -18,7 +18,7 @@ This package contains the Sheet module which can be used to handle musical leads
 
 ## Demo
 
-- [Stackblitz Demo](https://leetsheet-demo.stackblitz.io)
+- [Stackblitz Demo](https://stackblitz.com/edit/leetsheet-demo)
 - Manual run via `npm run demo`
 
 ## Get Started
