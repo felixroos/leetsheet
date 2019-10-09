@@ -1,6 +1,6 @@
 {
   "name": "leetsheet",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "musical leadsheet notation format for javascript",
   "main": "lib/index.js",
   "directories": {
