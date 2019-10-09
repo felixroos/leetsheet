@@ -7,7 +7,9 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc",
+    "demo": "parcel demo/index.html"
   },
   "repository": {
     "type": "git",
@@ -21,9 +23,10 @@
   "homepage": "https://github.com/felixroos/leetsheet#readme",
   "devDependencies": {
     "@types/jest": "^24.0.18",
+    "babel-jest": "^24.1.0",
     "jest": "^24.9.0",
-    "ts-jest": "^24.0.0",
-    "babel-jest": "^24.1.0"
+    "parcel": "^1.12.4",
+    "ts-jest": "^24.0.0"
   },
   "jest": {
     "transform": {

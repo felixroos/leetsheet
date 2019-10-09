@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>leetsheet demo</title>
+    <style>
+      textarea {
+        font-family: monospace;
+      }
+      .inline-block {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>leetsheet demo</h1>
+    <nav>
+      <button id="format">format</button>
+      <button id="minify">minify</button>
+      <button id="minifyUrlsafe">minify url safe</button>
+      <!-- <button id="parse">parse</button> -->
+    </nav>
+    <div>
+      <div class="inline-block">
+        <div><select id="examples"></select></div>
+        <textarea style="width:400px;height:200px" id="editor"></textarea>
+      </div>
+      <div class="inline-block">
+        <p>expands to</p>
+        <textarea style="width:400px;height:200px" id="expanded"></textarea>
+      </div>
+      <div class="inline-block">
+        <p>parses to</p>
+        <textarea style="width:400px;height:400px" id="json"></textarea>
+      </div>
+      <div class="inline-block">
+        <p>rendered</p>
+        <textarea style="width:400px;height:400px" id="json-expanded"></textarea>
+      </div>
+    </div>
+    <script src="demo.ts"></script>
+  </body>
+</html>

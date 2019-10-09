@@ -16,6 +16,10 @@ This package contains the Sheet module which can be used to handle musical leads
 - strictly typed: typescript first
 - Influenced by Tonal, Tidal Cycles and Impro-Visor
 
+## Demo
+
+You can run the demo via `npm run demo`
+
 ## Snippets
 
 A Snippet is a textual representation of a leadsheet.
