@@ -9,6 +9,36 @@ import { Snippet } from '../src/Snippet';
   ).toEqual('A B C');
 }); */
 
+export function fillRepeats(measures: any[]) {
+  let lastSymbol;
+  return measures.map(measure => {
+    measure = Measure.from(measure);
+    return {
+      ...measure,
+      body: (measure.body as string[]).map(symbol => {
+        if (symbol === 'x' && lastSymbol) {
+          return lastSymbol;
+        }
+        if (symbol === 'x') { // no lastSymbol
+          console.warn('cannot use repeat symbol "x" in first measure!');
+          return 'x';
+        }
+        lastSymbol = symbol;
+        return symbol;
+      })
+    }
+  })
+}
+
+test('repeated bars', () => {
+  expect(
+    Snippet.testFormat(
+      fillRepeats(Sheet.render([{ body: ['A'] }, { body: ['x'], signs: ['}'] }]))
+    )
+  ).toEqual('A A A A');
+})
+
+
 // rules as described in paper "formal semantics for music notation control flow"
 test('rule 1: repeat end without start', () => {
   expect(
